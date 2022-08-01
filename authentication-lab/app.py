@@ -60,7 +60,7 @@ def add_tweet():
 @app.route('/signout')
 def signout():
     login_session['user'] = None
-auth.current_user = None
+    auth.current_user = None
     return redirect(url_for('signin'))
 
 
